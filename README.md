@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Production%20Ready-4CAF50?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/Status-Online-4CAF50?style=for-the-badge" alt="Status">
   <img src="https://img.shields.io/badge/Architecture-ConvNeXt--Tiny-2E7D32?style=for-the-badge" alt="Architecture">
   <img src="https://img.shields.io/badge/Framework-PyTorch-EE4C2C?style=for-the-badge" alt="Framework">
 </p>
