@@ -8,6 +8,8 @@ import pandas as pd
 from torchvision import transforms
 from PIL import Image
 
+from config.settings import CONFIDENCE_THRESHOLD, MARGIN_THRESHOLD
+
 
 class AnimalPredictor:
 
@@ -72,7 +74,7 @@ class AnimalPredictor:
         top1 = results[0]["confidence"]
         top2 = results[1]["confidence"]
 
-        if top1 < 80 or (top1 - top2) < 20:
+        if top1 < (CONFIDENCE_THRESHOLD * 100) or (top1 - top2) < (MARGIN_THRESHOLD * 100):
 
             return {
                 "prediction": "Unclassified",
