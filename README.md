@@ -108,7 +108,7 @@ cd AniX
 
 ### 2. Activate Environment
 ```bash
-conda activate ecov
+conda activate <your_env_name> 
 ```
 
 ### 3. Install Dependencies
@@ -192,15 +192,16 @@ AniX/
 │   └── settings.py           # Configuration parameters and thresholds
 ├── data/
 │   └── animal_info.csv       # 209 Species biological & habitat dataset
-├── dataset_final/            # Target folders to determine class names
 ├── models/
-│   ├── best_model.pth        # ConvNeXt-Tiny weights checkpoint
+│   ├── best_model.pth        # ConvNeXt-Tiny weights checkpoint (~112 MB)
 │   └── model_metadata.json   # Model architecture statistics metadata
 ├── utils/
 │   ├── __init__.py           
 │   ├── data_loader.py        # Loading routines for dataset profiles
 │   └── validators.py         # Image size, extension, and corruption checks
+├── .gitignore                    # Git tracking exclusions
 ├── app.py                    # Main app runner UI layout
+├── final_dataset_statistics.csv # Detailed image counts per species class
 ├── predict.py                # Deep learning prediction module
 ├── style.css                 # Custom glassmorphic styling
 └── requirements.txt          # Library dependencies

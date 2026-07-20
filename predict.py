@@ -3,10 +3,9 @@ from pathlib import Path
 import torch
 import torch.nn.functional as F
 import timm
+import pandas as pd
 
 from torchvision import transforms
-from torchvision.datasets import ImageFolder
-
 from PIL import Image
 
 
@@ -20,11 +19,9 @@ class AnimalPredictor:
             "cuda" if torch.cuda.is_available() else "cpu"
         )
 
-        dataset = ImageFolder(
-            self.project_root / "dataset_final"
-        )
-
-        self.class_names = dataset.classes
+        stats_path = self.project_root / "final_dataset_statistics.csv"
+        df = pd.read_csv(stats_path)
+        self.class_names = sorted(df["Species"].tolist())
 
         self.transform = transforms.Compose([
             transforms.Resize((224, 224)),
