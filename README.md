@@ -87,8 +87,8 @@ To safeguard against misclassifications, a double-threshold filter is applied:
 
 ```text
 streamlit==1.58.0
-torch==2.12.1+cu126
-torchvision==0.27.1+cu126
+torch==2.12.1
+torchvision==0.27.1
 timm==1.0.27
 pandas==2.2.2
 numpy==2.2.6
