@@ -1,0 +1,6 @@
+__pycache__/
+temp_prediction.jpg
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db

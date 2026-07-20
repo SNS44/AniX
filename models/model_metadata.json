@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "trained_date": "Completed",
+  "architecture": "ConvNeXt-Tiny",
+  "num_classes": 209,
+  "input_shape": [224, 224, 3],
+  "validation_accuracy": 0.656,
+  "training_epochs": 15,
+  "dataset_size": 209,
+  "class_labels_file": "ImageFolder classes",
+  "notes": "Trained using ConvNeXt-Tiny model architecture via PyTorch/timm, performing classification across 209 classes."
+}
